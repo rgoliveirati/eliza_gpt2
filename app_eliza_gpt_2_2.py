@@ -1,7 +1,7 @@
 import random
 import re
-import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
+import streamlit as st
 import torch
 
 class SessionState:
