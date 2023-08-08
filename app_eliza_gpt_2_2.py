@@ -1,3 +1,4 @@
+%%writefile app_eliza_gpt_2_2.py
 import random
 import re
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
@@ -142,6 +143,8 @@ def main():
     
     session_state = st.session_state
     
+    # session_state = SessionState(chat_history=[])
+
     user_input = st.text_input("You: ")
     if user_input:
         response = eliza_response(user_input, session_state.chat_history)
