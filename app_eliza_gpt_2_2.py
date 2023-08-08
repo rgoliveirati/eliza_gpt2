@@ -9,7 +9,7 @@ class SessionState:
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
 
-model_name = "gpt2-medium"
+model_name = "gpt2"
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 model = GPT2LMHeadModel.from_pretrained(model_name)
 
